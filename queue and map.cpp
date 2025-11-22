@@ -66,9 +66,22 @@ int main()
     mm.insert({"Shreyas",95});
     for(auto p : mm ){
         cout<<p.first<<" "<<p.second<<endl;
+
+    //using unordered map 
+    unordered_map<string, int> um;
+
+    // Insert values
+    um["Shreyas"] = 96;
+    um["Hardik"]  = 95;
+    um["Virat"]   = 91;
+
+    // Print
+    cout << "Printing unordered_map:" << endl;
+    for (auto p : um) {
+        cout << p.first << " " << p.second << endl;
+    }
     }
 
-
-    //unordered map
     return 0;
 }
+
